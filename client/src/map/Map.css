@@ -1,0 +1,56 @@
+#map2d, #map3d {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#switch {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    z-index: 3;
+}
+
+.show {
+    display: block;
+}
+
+.noshow {
+    display: none;
+}
+
+.embeded {
+    height: 500px;
+}
+
+.marker-label {
+    display: block;
+    background-color: blue; 
+    border-radius: 50%;
+    width: 25px; 
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    color: white;
+}
+
+.restaurant.highlight .marker-label{
+    display: none;
+}
+
+.details {
+    display: none;
+    flex-direction: column;
+    flex: 1;
+}
+
+.restaurant.highlight .details {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    width: auto;
+}
